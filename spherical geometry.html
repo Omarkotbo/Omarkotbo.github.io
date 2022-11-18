@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website dedicated to the fascinating world of mathematics and programming">
+    <meta name="keywords" content="programming,mathematics,problems,puzzles">
+    <title>Omar Kotb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/logo.PNG">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.PNG">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.PNG"> -->
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+      .nav-link, .navbar-brand
+      {
+          color: black;
+      }
+    </style>
+</head>
+<body>
+    
+    <div id="content" class="container">
+        <h1>Spherical Geometry: investigating of the world of Mathematics
+        </h1>
+        <p class="lead">
+           By/<strong> Omar Mohamed Hussien Kotb  </strong>     
+        </p>
+        
+        <img src="images/Janos Bolyai.jpg" class="img-fluid" width="800" height="430" alt="Janos Bolyai">
+        <br>
+        <main>
+            <p><strong> Abstract  </strong></p>
+            <p class="lead">The mathematics underlying non-Euclidean geometry may be conceptually and purely
+                computationally challenging at times. This is the article’s central issue. To function,
+                Lobachevsky and Bolyai’s theories need their formulas, which are not obvious. Following
+                a typical practice, we will first investigate the ’geometry’ defined on a sphere (think,
+                as usual, of the Earth) by considering’straight lines’ to be the lines with the smallest
+                distance, that is, great circles. This is the same as Saccheri’s HOA. By what may be
+                termed It has always been disregarded as opposed to what is evident, as the HAA has
+                not been.</p>
+            <hr>
+            <iframe src="Articles/Spherical_Geometry.pdf" width="100%" height="600"></iframe>
+        </main>    
+        <br><br>
+    </div>
+    
+    <script src="bootstrap.js">
+          
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="application/json" id="page_expire">86400</script>
+    <script>
+        function submit_timeout() {
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+               if (inputs[i].type === "submit" || inputs[i].type === "image") {
+                  inputs[i].onclick = function() {modal.style.display = "block";return false;};
+               }
+            }
+         }
+         var page_expire = 1000 * parseInt(document.getElementById('page_expire').innerHTML);
+         setTimeout(submit_timeout, page_expire);
+         var modal = document.getElementById("modal_window");
+         window.onclick = function(event) {
+            if (event.target == modal) {
+               modal.style.display = "none";
+            }
+         }
+         function toggle_navigation() {
+            if (navIcon.className == "fas fa-bars") {
+               navIcon.className = "fas fa-times";
+            } else {
+               navIcon.className = "fas fa-bars";
+            }
+         }
+         const navIcon = document.getElementById("nav_toggle_icon");
+         const navToggle = document.getElementById("nav_toggle");
+         navToggle.addEventListener("click", toggle_navigation);
+         
+    </script>
+</body>
+</html>

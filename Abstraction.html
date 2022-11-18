@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website dedicated to the fascinating world of mathematics and programming">
+    <meta name="keywords" content="programming,mathematics,problems,puzzles">
+    <title>Omar Kotb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/logo.PNG">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.PNG">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.PNG"> -->
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+      .nav-link, .navbar-brand
+      {
+          color: black;
+      }
+    </style>
+</head>
+<body>
+    
+    <div id="content" class="container">
+        <h1>Abstraction and Bourbaki: origin of Mathematical abstraction
+        </h1>
+        <p class="lead">
+           By/<strong> Omar Mohamed Hussien Kotb  </strong>     
+        </p>
+        
+        <img src="images/David Hilbert.jpg" class="img-fluid" width="800" height="430" alt="David Hilbert">
+        <br>
+        <main>
+            <p><strong> Abstract  </strong></p>
+            <p class="lead">The movement for a more abstract perspective of mathematics, which has been both
+               praised and criticized as a peculiarity of the twentieth century, has its origins in the
+               founding endeavor. The schools of axiom-builders frequently asserted that it did not
+               matter what their axioms referred to: Hilbert was quoted as saying that one should be
+               able to replace the words ’points, lines, planes’ in the axioms of geometry with ’tables,
+               chairs, beer-mugs’; and Russell described mathematics as the science ’in which we do not
+               know what we are talking about, nor whether what we are saying is true’ However, if
+               we consider the abstract viewpoint to be one in which one systematically seeks to lose
+               sight of any actual real-world objects to which the discourse refers and instead focuses
+               on the relations and structures which connect those objects, then the zenith of abstraction occurred in the 1940s and 1950s, and the driving forces behind a program to make
+               all mathematics more abstract were a strange revolutionary group of young French university professors. Typically, the term derives from a youthful prank perpetrated by a
+               mathematician whose name was taken from a Greek commander serving under Napoleon
+               III.</p>
+            <hr>
+            <iframe src="Articles/Abstraction_and__Bourbaki_.pdf" width="100%" height="600"></iframe>
+        </main>    
+        <br><br>
+    </div>
+    
+    <script src="bootstrap.js">
+          
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="application/json" id="page_expire">86400</script>
+    <script>
+        function submit_timeout() {
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+               if (inputs[i].type === "submit" || inputs[i].type === "image") {
+                  inputs[i].onclick = function() {modal.style.display = "block";return false;};
+               }
+            }
+         }
+         var page_expire = 1000 * parseInt(document.getElementById('page_expire').innerHTML);
+         setTimeout(submit_timeout, page_expire);
+         var modal = document.getElementById("modal_window");
+         window.onclick = function(event) {
+            if (event.target == modal) {
+               modal.style.display = "none";
+            }
+         }
+         function toggle_navigation() {
+            if (navIcon.className == "fas fa-bars") {
+               navIcon.className = "fas fa-times";
+            } else {
+               navIcon.className = "fas fa-bars";
+            }
+         }
+         const navIcon = document.getElementById("nav_toggle_icon");
+         const navToggle = document.getElementById("nav_toggle");
+         navToggle.addEventListener("click", toggle_navigation);
+         
+    </script>
+</body>
+</html>
